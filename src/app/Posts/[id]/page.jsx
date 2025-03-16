@@ -1,4 +1,15 @@
 import React from "react";
+export async function generateMetadata({ params }) {
+  // read route params
+  const { id } = await params;
+
+  // fetch data
+  const product = await getSinglePost(id);
+
+  return {
+    title: product.title,
+  };
+}
 
 export const getSinglePost = async (post_id) => {
   const res = await fetch(
