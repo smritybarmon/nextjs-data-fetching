@@ -25,6 +25,11 @@ const Navber = () => {
                 Meals
               </Link>
             </li>
+            <li>
+              <Link href="/register" className="text-white hover:text-gray-400">
+                Register
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
